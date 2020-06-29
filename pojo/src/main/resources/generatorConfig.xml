@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!-- 数据库驱动:选择你的本地硬盘上面的数据库驱动包-->
+    <classPathEntry  location="/home/zephon/JetBrains/mylib/mavenlib/mysql/mysql-connector-java/8.0.20/mysql-connector-java-8.0.20.jar"/>
+    <context id="DB2Tables"  targetRuntime="MyBatis3">
+        <commentGenerator>
+            <property name="suppressDate" value="true"/>
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+        <!--数据库链接URL，用户名、密码 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1/nc2017" userId="root" password="123456">
+        </jdbcConnection>
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+        <!-- 生成模型的包名和位置-->
+        <javaModelGenerator targetPackage="com.zephon.pojo" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+        <!-- 生成映射文件的包名和位置-->
+        <sqlMapGenerator targetPackage="main.resources.mapper" targetProject="src">
+            <!-- enableSubPackages:是否让schema作为包的后缀 -->
+            <property name="enableSubPackages" value="false" />
+        </sqlMapGenerator>
+        <!-- 生成DAO的包名和位置-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.zephon.mapper" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+        <!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名-->
+        <table tableName="tb_address" schema=""/>
+        <table tableName="tb_areas" schema=""/>
+        <table tableName="tb_brand" schema=""/>
+        <table tableName="tb_cities" schema=""/>
+        <table tableName="tb_content" schema=""/>
+        <table tableName="tb_content_category" schema=""/>
+        <table tableName="tb_freight_template" schema=""/>
+        <table tableName="tb_goods" schema=""/>
+        <table tableName="tb_goods_desc" schema=""/>
+        <table tableName="tb_item" schema=""/>
+        <table tableName="tb_item_cat" schema=""/>
+        <table tableName="tb_order" schema=""/>
+        <table tableName="tb_order-item" schema=""/>
+        <table tableName="tb_pay_log" schema=""/>
+        <table tableName="tb_provinces" schema=""/>
+        <table tableName="tb_seckill_goods" schema=""/>
+        <table tableName="tb_seckill_order" schema=""/>
+        <table tableName="tb_seller" schema=""/>
+        <table tableName="tb_specification" schema=""/>
+        <table tableName="tb_specification_option" schema=""/>
+        <table tableName="tb_type_template" schema=""/>
+        <table tableName="tb_user" schema=""/>
+    </context>
+</generatorConfiguration>

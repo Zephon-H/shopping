@@ -1,0 +1,5 @@
+com/zephon/manager/service/SpecificationFeignService.class
+com/zephon/manager/controller/SpecificationFeignController.class
+com/zephon/manager/controller/BrandFeignController.class
+com/zephon/manager/service/BrandFeignService.class
+com/zephon/manager/ManagerMain.class
