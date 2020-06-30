@@ -6,6 +6,8 @@ import com.zephon.manager.service.BrandFeignService;
 import com.zephon.manager.service.SpecificationFeignService;
 import com.zephon.pojo.TbBrand;
 import com.zephon.pojo.TbSpecification;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author Zephon
@@ -36,5 +39,17 @@ public class SpecificationFeignController {
     @PostMapping("/add")
     public Result add(@RequestBody TbSpecification specification){
         return specificationFeignService.add(specification);
+    }
+    @GetMapping("/{id}")
+    public TbSpecification findById(@PathVariable("id") Long id){
+        return specificationFeignService.findById(id);
+    }
+    @PostMapping("/modify")
+    public Result modify(@RequestBody TbSpecification specification){
+        return specificationFeignService.modify(specification);
+    }
+    @PostMapping("/delete")
+    public Result delete(@RequestBody List<Long> ids){
+        return specificationFeignService.delete(ids);
     }
 }

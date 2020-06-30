@@ -2,6 +2,9 @@ package com.zephon.sellergoods.service;
 
 import com.github.pagehelper.PageInfo;
 import com.zephon.pojo.TbSpecification;
+import com.zephon.pojo.TbSpecificationOption;
+
+import java.util.List;
 
 /**
  * @author Zephon
@@ -14,4 +17,10 @@ public interface SpecificationService {
     PageInfo<TbSpecification> findAll(Integer page, Integer size, TbSpecification specification);
 
     int add(TbSpecification specification);
+
+    TbSpecification findById(Long id);
+
+    int updateById(TbSpecification specification);
+
+    int deleteByIds(List<Long> ids);
 }
