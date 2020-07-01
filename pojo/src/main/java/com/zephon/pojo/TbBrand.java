@@ -3,6 +3,8 @@ package com.zephon.pojo;
 import java.io.Serializable;
 
 public class TbBrand implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private Long id;
 
     private String name;
@@ -15,6 +17,15 @@ public class TbBrand implements Serializable {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+
+    /**
+     * 返回name，使用text
+     * @return
+     */
+    public String getText(){
+        return name;
     }
 
     public String getName() {
@@ -31,5 +42,14 @@ public class TbBrand implements Serializable {
 
     public void setFirstChar(String firstChar) {
         this.firstChar = firstChar == null ? null : firstChar.trim();
+    }
+
+    @Override
+    public String toString() {
+        return "TbBrand{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", firstChar='" + firstChar + '\'' +
+                '}';
     }
 }

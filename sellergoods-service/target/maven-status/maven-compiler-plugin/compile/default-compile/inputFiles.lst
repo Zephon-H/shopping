@@ -7,6 +7,8 @@
 /home/zephon/JetBrains/JavaEE/shopping-parent/sellergoods-service/src/main/java/com/zephon/sellergoods/mapper/TbContentMapper.java
 /home/zephon/JetBrains/JavaEE/shopping-parent/sellergoods-service/src/main/java/com/zephon/sellergoods/mapper/TbSeckillOrderMapper.java
 /home/zephon/JetBrains/JavaEE/shopping-parent/sellergoods-service/src/main/java/com/zephon/sellergoods/mapper/TbSpecificationOptionMapper.java
+/home/zephon/JetBrains/JavaEE/shopping-parent/sellergoods-service/src/main/java/com/zephon/sellergoods/controller/TypeTemplateController.java
+/home/zephon/JetBrains/JavaEE/shopping-parent/sellergoods-service/src/main/java/com/zephon/sellergoods/service/TypeTemplateService.java
 /home/zephon/JetBrains/JavaEE/shopping-parent/sellergoods-service/src/main/java/com/zephon/sellergoods/mapper/TbPayLogMapper.java
 /home/zephon/JetBrains/JavaEE/shopping-parent/sellergoods-service/src/main/java/com/zephon/sellergoods/mapper/TbSeckillGoodsMapper.java
 /home/zephon/JetBrains/JavaEE/shopping-parent/sellergoods-service/src/main/java/com/zephon/sellergoods/controller/BrandController.java
@@ -19,6 +21,7 @@
 /home/zephon/JetBrains/JavaEE/shopping-parent/sellergoods-service/src/main/java/com/zephon/sellergoods/mapper/TbCitiesMapper.java
 /home/zephon/JetBrains/JavaEE/shopping-parent/sellergoods-service/src/main/java/com/zephon/sellergoods/mapper/TbGoodsMapper.java
 /home/zephon/JetBrains/JavaEE/shopping-parent/sellergoods-service/src/main/java/com/zephon/sellergoods/mapper/TbAddressMapper.java
+/home/zephon/JetBrains/JavaEE/shopping-parent/sellergoods-service/src/main/java/com/zephon/sellergoods/service/impl/TypeTemplateImpl.java
 /home/zephon/JetBrains/JavaEE/shopping-parent/sellergoods-service/src/main/java/com/zephon/sellergoods/mapper/TbAreasMapper.java
 /home/zephon/JetBrains/JavaEE/shopping-parent/sellergoods-service/src/main/java/com/zephon/sellergoods/mapper/TbOrderMapper.java
 /home/zephon/JetBrains/JavaEE/shopping-parent/sellergoods-service/src/main/java/com/zephon/sellergoods/mapper/TbTypeTemplateMapper.java

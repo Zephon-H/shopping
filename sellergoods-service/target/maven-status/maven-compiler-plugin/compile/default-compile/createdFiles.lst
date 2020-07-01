@@ -3,9 +3,11 @@ com/zephon/sellergoods/mapper/TbProvincesMapper.class
 com/zephon/sellergoods/mapper/TbSellerMapper.class
 com/zephon/sellergoods/service/impl/SpecificationServiceImpl.class
 com/zephon/sellergoods/controller/BrandController.class
+com/zephon/sellergoods/service/impl/TypeTemplateImpl.class
 com/zephon/sellergoods/service/SpecificationService.class
 com/zephon/sellergoods/mapper/TbGoodsDescMapper.class
 com/zephon/sellergoods/mapper/TbBrandMapper.class
+com/zephon/sellergoods/service/TypeTemplateService.class
 com/zephon/sellergoods/mapper/TbFreightTemplateMapper.class
 com/zephon/sellergoods/mapper/TbGoodsMapper.class
 com/zephon/sellergoods/mapper/TbSpecificationOptionMapper.class
@@ -15,6 +17,7 @@ com/zephon/sellergoods/mapper/TbContentMapper.class
 com/zephon/sellergoods/mapper/TbSeckillGoodsMapper.class
 com/zephon/sellergoods/SellerGoodsMain.class
 com/zephon/sellergoods/mapper/TbOrderMapper.class
+com/zephon/sellergoods/controller/TypeTemplateController.class
 com/zephon/sellergoods/mapper/TbItemCatMapper.class
 com/zephon/sellergoods/mapper/TbAreasMapper.class
 com/zephon/sellergoods/service/impl/BrandServiceImpl.class

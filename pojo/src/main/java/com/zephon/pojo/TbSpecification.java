@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 public class TbSpecification implements Serializable {
+    private static final long serialVersionUID = 2L;
     private Long id;
 
     private String specName;
@@ -32,5 +33,14 @@ public class TbSpecification implements Serializable {
 
     public void setSpecName(String specName) {
         this.specName = specName == null ? null : specName.trim();
+    }
+
+    @Override
+    public String toString() {
+        return "TbSpecification{" +
+                "id=" + id +
+                ", specName='" + specName + '\'' +
+                ", specificationOptionList=" + specificationOptionList +
+                '}';
     }
 }

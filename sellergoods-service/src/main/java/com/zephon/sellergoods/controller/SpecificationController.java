@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Zephon
@@ -78,5 +79,14 @@ public class SpecificationController {
         } catch (Exception e) {
         }
         return new Result(false,"删除失败");
+    }
+
+    /**
+     * 获取规格数据，转成select2的格式
+     * @return
+     */
+    @GetMapping("/optionlist")
+    public List<Map<String,Object>> getOptionList(){
+        return specificationService.selectOptionList();
     }
 }

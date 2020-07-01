@@ -21,4 +21,8 @@ app.service('specificationService',function($http){
     this.findAll = (page,size,searchEntity)=>{
         return $http.post(`/specification/list?page=${page}&size=${size}`,searchEntity)
     }
+    // 查询规格选项
+    this.findOptionList = () => {
+        return $http.get('/specification/optionlist')
+    }
 })

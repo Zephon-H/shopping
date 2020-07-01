@@ -21,4 +21,8 @@ app.service('brandService',function($http){
     this.findAll = (page,size,searchEntity)=>{
         return $http.post(`/brand/list?page=${page}&size=${size}`,searchEntity)
     }
+    // 查询所有
+    this.findBrandList = () => {
+        return $http.get("/brand/list")
+    }
 })

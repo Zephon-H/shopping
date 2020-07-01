@@ -23,8 +23,10 @@ import java.util.Map;
  * @Copyright ©
  */
 @Component
-@FeignClient("SELLERGOODS-SERVICE")
+@FeignClient(value="SELLERGOODS-SERVICE",contextId = "brand")
 public interface BrandFeignService {
+    @GetMapping("/brand/list")
+    List<TbBrand> list();
 
     @PostMapping("/brand/list")
     PageInfo<TbBrand> list(@RequestParam(value = "page",required = false,defaultValue = "1")int page,

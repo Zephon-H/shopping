@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Zephon
@@ -51,5 +52,10 @@ public class SpecificationFeignController {
     @PostMapping("/delete")
     public Result delete(@RequestBody List<Long> ids){
         return specificationFeignService.delete(ids);
+    }
+    @GetMapping("/optionlist")
+    public List<Map<String,Object>> getOptionList(){
+        System.out.println(specificationFeignService.getOptionList());
+        return specificationFeignService.getOptionList();
     }
 }

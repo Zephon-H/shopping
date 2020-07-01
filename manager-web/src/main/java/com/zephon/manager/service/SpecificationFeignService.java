@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Zephon
@@ -40,4 +41,6 @@ public interface SpecificationFeignService {
 
     @PostMapping("/specification/delete")
     Result delete(@RequestBody List<Long> ids);
+    @GetMapping("/specification/optionlist")
+    public List<Map<String,Object>> getOptionList();
 }

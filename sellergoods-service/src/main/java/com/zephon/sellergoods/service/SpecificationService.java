@@ -5,6 +5,7 @@ import com.zephon.pojo.TbSpecification;
 import com.zephon.pojo.TbSpecificationOption;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Zephon
@@ -23,4 +24,6 @@ public interface SpecificationService {
     int updateById(TbSpecification specification);
 
     int deleteByIds(List<Long> ids);
+
+    List<Map<String, Object>> selectOptionList();
 }

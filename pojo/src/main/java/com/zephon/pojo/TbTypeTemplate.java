@@ -3,6 +3,7 @@ package com.zephon.pojo;
 import java.io.Serializable;
 
 public class TbTypeTemplate implements Serializable {
+    private static final long serialVersionUID = 3L;
     private Long id;
 
     private String name;
@@ -51,5 +52,16 @@ public class TbTypeTemplate implements Serializable {
 
     public void setCustomAttributeItems(String customAttributeItems) {
         this.customAttributeItems = customAttributeItems == null ? null : customAttributeItems.trim();
+    }
+
+    @Override
+    public String toString() {
+        return "TbTypeTemplate{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", specIds='" + specIds + '\'' +
+                ", brandIds='" + brandIds + '\'' +
+                ", customAttributeItems='" + customAttributeItems + '\'' +
+                '}';
     }
 }

@@ -30,6 +30,11 @@ public class BrandFeignController {
     @Resource
     private BrandFeignService brandService;
 
+    @GetMapping("/list")
+    public List<TbBrand> list(){
+        return brandService.list();
+    }
+
     @PostMapping("/list")
     public PageInfo<TbBrand> list(@RequestParam(value = "page", required = false, defaultValue = "1") int page,
                                   @RequestParam(value = "size",required = false,defaultValue = "0")int size,

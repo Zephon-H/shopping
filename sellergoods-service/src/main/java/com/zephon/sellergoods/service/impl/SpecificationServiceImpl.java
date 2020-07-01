@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Zephon
@@ -105,5 +106,10 @@ public class SpecificationServiceImpl implements SpecificationService {
         int count2 = specificationOptionMapper.deleteByExample(ex);
 
         return count1+count2;
+    }
+
+    @Override
+    public List<Map<String, Object>> selectOptionList() {
+        return specificationMapper.selectOptionList();
     }
 }
