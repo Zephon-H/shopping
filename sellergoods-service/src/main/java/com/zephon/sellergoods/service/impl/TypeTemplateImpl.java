@@ -57,4 +57,9 @@ public class TypeTemplateImpl implements TypeTemplateService {
         criteria.andIdIn(ids);
         return typeTemplateMapper.deleteByExample(example);
     }
+
+    @Override
+    public List<TbTypeTemplate> findAll() {
+        return typeTemplateMapper.selectByExample(null);
+    }
 }

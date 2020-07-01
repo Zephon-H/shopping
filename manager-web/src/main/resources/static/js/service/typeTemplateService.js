@@ -21,4 +21,7 @@ app.service('typeTemplateService',function($http){
     this.findAll = (page,size,searchEntity)=>{
         return $http.post(`/typeTemplate/list?page=${page}&size=${size}`,searchEntity)
     }
+    this.findOptionList = ()=>{
+        return $http.get("/typeTemplate/list")
+    }
 })

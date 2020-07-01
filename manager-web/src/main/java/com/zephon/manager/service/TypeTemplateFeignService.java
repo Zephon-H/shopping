@@ -40,5 +40,8 @@ public interface TypeTemplateFeignService {
 
     @PostMapping("/typeTemplate/delete")
     Result delete(@RequestBody List<Long> ids);
+
+    @GetMapping("/typeTemplate/list")
+    List<TbTypeTemplate> list();
 }
 

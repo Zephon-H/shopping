@@ -42,5 +42,5 @@ public interface SpecificationFeignService {
     @PostMapping("/specification/delete")
     Result delete(@RequestBody List<Long> ids);
     @GetMapping("/specification/optionlist")
-    public List<Map<String,Object>> getOptionList();
+    List<Map<String,Object>> getOptionList();
 }

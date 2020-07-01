@@ -23,4 +23,6 @@ public interface TypeTemplateService {
     int updateById(TbTypeTemplate typeTemplate);
 
     int deleteByIds(List<Long> ids);
+
+    List<TbTypeTemplate> findAll();
 }

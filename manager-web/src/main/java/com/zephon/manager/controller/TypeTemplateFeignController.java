@@ -54,4 +54,8 @@ public class TypeTemplateFeignController {
     public Result delete(@RequestBody List<Long> ids){
         return typeTemplateFeignService.delete(ids);
     }
+    @GetMapping("/list")
+    public List<TbTypeTemplate> list(){
+        return typeTemplateFeignService.list();
+    }
 }

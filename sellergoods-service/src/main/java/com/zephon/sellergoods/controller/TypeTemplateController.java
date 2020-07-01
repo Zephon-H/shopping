@@ -33,6 +33,11 @@ public class TypeTemplateController {
     @Resource
     private TypeTemplateService typeTemplateService;
 
+    @GetMapping("/list")
+    public List<TbTypeTemplate> list(){
+        return typeTemplateService.findAll();
+    }
+
     @PostMapping("/list")
     public PageInfo<TbTypeTemplate> list(@RequestParam(value="page",required = false,defaultValue = "1") Integer page,
                                           @RequestParam(value = "size",required = false,defaultValue = "10")Integer size,
