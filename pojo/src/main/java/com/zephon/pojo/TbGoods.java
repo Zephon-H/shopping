@@ -2,8 +2,37 @@ package com.zephon.pojo;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.List;
 
 public class TbGoods implements Serializable {
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * tb_goods_desc:一对一映射
+     */
+    private TbGoodsDesc goodsDesc;
+
+    /**
+     * tb_item：一对多映射
+     */
+    private List<TbItem> items;
+
+    public TbGoodsDesc getGoodsDesc() {
+        return goodsDesc;
+    }
+
+    public void setGoodsDesc(TbGoodsDesc goodsDesc) {
+        this.goodsDesc = goodsDesc;
+    }
+
+    public List<TbItem> getItems() {
+        return items;
+    }
+
+    public void setItems(List<TbItem> items) {
+        this.items = items;
+    }
+
     private Long id;
 
     private String sellerId;
