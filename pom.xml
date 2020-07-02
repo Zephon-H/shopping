@@ -14,6 +14,7 @@
         <module>pojo</module>
         <module>manager-web</module>
         <module>common</module>
+        <module>shopping-web</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -8,11 +8,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="sellergoods-service" />
-        <module name="register-center" />
-        <module name="manager-web" />
         <module name="common" />
+        <module name="manager-web" />
+        <module name="sellergoods-service" />
+        <module name="shopping-web" />
         <module name="pojo" />
+        <module name="register-center" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
